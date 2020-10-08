@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #FBAE17;
+    background-color: rgb(251, 174, 23);
     overflow-x: hidden;
 }
 
@@ -209,7 +209,7 @@ HOME
 DARK-MODE
 ==================== */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     color: #eee;
     background: #121212;
@@ -218,7 +218,7 @@ DARK-MODE
     background: #eee;
   }
   
-}
+} */
 
 
 /* ====================
