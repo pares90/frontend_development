@@ -6,6 +6,10 @@ body {
     background-color: rgb(251, 174, 23);
     overflow-x: hidden;
 }
+body.subpage {
+  background-color: rgb(255, 206, 0);
+  background
+}
 
 li {
     list-style-type: none;
@@ -21,7 +25,6 @@ h1 {
 h3 {
   font-size: 3em;
   padding-bottom: 0.8em;
- 
 }
 
 h4 {
@@ -35,7 +38,13 @@ p {
 }
 
 a {
-  text-decoration: none;;
+  color: black;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+a:hover {
+  padding-left: 1em;
 }
 
 i {
@@ -43,7 +52,13 @@ i {
   margin-right: 1em;
 }
 
-
+hr {
+  background: #000;
+  height: 3px;
+  margin: 0;
+  border: 0;
+  border-radius: 1px;
+}
 
 
 /* ====================
@@ -151,6 +166,10 @@ nav {
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
    border-top: 2px solid black;
  }
+
+ #menu-alternative-color {
+  background: rgb(255, 206, 0);
+ }
  
  #menu li
  {
@@ -163,7 +182,18 @@ nav {
    transform: none;
  }
 
+.logo {
+  position: absolute;
+  width: 3em;
+  height: auto;
+  right: 1em;
 
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
@@ -183,15 +213,17 @@ HOME
   background-size: cover;
 }
 
+.card:hover {
+  transition: all .1s linear;
+  transform: scale(1.01);
+}
+
 .card > div {
   padding: 2em;
 }
 .card > div > p, .card > div > h4, .card > div > a {
   color: white;
 }  
-/* .card > div > a > i {
-  margin-left: 1em;
-} */
 .card:first-child {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/2560px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg');
 }
@@ -202,25 +234,22 @@ HOME
   background-image: url('https://micrio.vangoghmuseum.nl/iiif/rAERt/full/600,/0/default.jpg?hash=EUL-B7qzrQARQKKY9qjLMwnmMuDyjhVq_0hKIzpphrw');
 }
  
-
-
-
 /* ====================
-DARK-MODE
+PAGE: MEESTERWERKEN
 ==================== */
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 206, 0);
+  z-index: 999;
+}
 
-/* @media (prefers-color-scheme: dark) {
-  body {
-    color: #eee;
-    background: #121212;
-  }
-  #menuToggle > span {
-    background: #eee;
-  }
-  
-} */
-
-
+#patatoeeaters {
+  background-image: url('https://micrio.vangoghmuseum.nl/iiif/yzksg/full/300,/0/default.jpg?hash=pOk2lOhbQUBp7c81lD9D9Qh6kYAy2glT0wjEebaM6mk');
+}
+#sunflowers {
+  background-image: url('https://micrio.vangoghmuseum.nl/iiif/TZCqF/full/300,/0/default.jpg?hash=GX65NLbVLRjiZCNA0OWAm6DND2mceGta5RjC15UaQyw');
+}
 /* ====================
 FONTS
 ==================== */
